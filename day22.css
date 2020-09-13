@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: brown;
+}
+h2::before{
+    content: "**/";
+}
+h2::after{
+    content: "\\**";
+}
+p{
+    font-size:20px;
+}
+p::before{
+    content: '"';
+}
+p::after{
+    content: '"';
+}
+h1::after{
+    content: "-";
+}
+
+.buttondiv{
+    text-align: center;
+    margin-top: 40px;
+}
+.link{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 15px 40px;
+    background: rgb(156, 43, 43);
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.link::before{
+    content: "";
+    background: rgb(3, 3, 3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+.link:hover::before{
+    width: 100%;
+}
+/* link2 */
+.link2{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 15px 40px;
+    background: rgb(156, 43, 43);
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.link2::before{
+    content: "";
+    background: rgb(3, 3, 3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+.link2:hover::before{
+    height:100% ;
+}
+/* link3 */
+.link3{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 15px 40px;
+    background: rgb(156, 43, 43);
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.link3::before{
+    content: "";
+    background: rgb(3, 3, 3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+.link3:hover::before{
+    width: 100%;
+}
+/* link4 */
+.link4{
+    font-size: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    display:inline-block;
+    padding: 15px 40px;
+    background: rgb(156, 43, 43);
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+.link4::before{
+    content: "";
+    background: rgb(3, 3, 3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+.link4:hover::before{
+    height: 100%;
+    width: 100%;
+}
+
+.link5{
+    position: relative;
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: rgb(156, 43, 43);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: .3s;
+    z-index: 1;
+    display: inline-block;
+}
+.link5::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #000;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 10px;
+}
+.link5:hover::after{
+    width: 100%;
+}
+.f{
+    margin-left: -5px;
+}
+
+
+
+/* image add */
+
+ul{
+    color: rgb(138, 25, 25);
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.a::before{
+    content: "\f015";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 7px;
+
+}
+.b::before{
+    content: "\f1b9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: -28px;
+
+}
+.c::before{
+    content: "\f3cd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 13px;
+    margin-left: 14px;
+
+}
+
+.d::before{
+    content: "\f239";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 25px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: -6px;
+
+}
